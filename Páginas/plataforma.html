@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="../Imágenes/icono-1.png" type="image/png" sizes="x-icon">
     <link rel="stylesheet" href="../css/estilo.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="plataformaGrids">
@@ -21,21 +21,22 @@
                 <li class="navegador"><a href="../Páginas/calendario.html">Calendario</a></li>
                 <li class="navegador"><a href="../Páginas/plataforma.html">Plataforma</a></li>
                 <li class="navegador"><a href="../Páginas/nosotros.html">Nosotros</a></li>
+                <li class="navegador"><a href="../Páginas/programas.html">Programas</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="plataformaA">
-        <h1>Ejercicios</h1>
-        <h2>Selecciona el ejercicio o temario a descargar</h2>
+        <h1 data-aos="flip-right">Ejercicios</h1>
+        <h2 data-aos="fade-right">Selecciona el ejercicio o temario a descargar</h2>
     </section>
 
     <section class="plataformaB">
-        <img class="estatua" src="../Imágenes/estatua.png" alt="">
+        <img class="estatua" src="../Imágenes/estatua.png" alt="" data-aos="zoom-in">
     </section>
     <section class="plataformaC">
         <div class="gridejercicio">
-            <h3>Excel Intensivo Nivel 1</h3>
+            <h3 >Excel Intensivo Nivel 1</h3>
             <ul>
                 <li>Temario N1</li>
                 <li>Ejercicios N1</li>
@@ -85,7 +86,10 @@
         <p>Creado por @Hodiesea Capacitación y @Alejandro Segura, todos los derechos reservados</p>
         <p>Jóvenes mejorando jóvenes</p>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

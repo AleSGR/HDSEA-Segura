@@ -11,7 +11,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
 
 </head>
@@ -25,6 +25,7 @@
                     <li class="navegador"><a href="../Páginas/calendario.html">Calendario</a></li>
                     <li class="navegador"><a href="../Páginas/plataforma.html">Plataforma</a></li>
                     <li class="navegador"><a href="../Páginas/nosotros.html">Nosotros</a></li>
+                    <li class="navegador"><a href="../Páginas/programas.html">Programas</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,8 +34,8 @@
 
 
     <section class=" container-fluid quienessomos">
-        <h1 class=>¿Quiénes somos Hodiesea?</h1>
-        <video src="../Videos/Nosotros.mp4" class="img-fluid mt-3 videonosotros" autoplay="true" loop="true"></video>
+        <h1 data-aos="flip-right">¿Quiénes somos Hodiesea?</h1>
+        <video src="../Videos/Nosotros.mp4" class="vid-fluid mt-3 videonosotros" autoplay="true" loop="true"></video>
         <div class="mision container-md">
             <h2 class="text-end mt-5 container-fluid ">Misión</h2>
             <p class="text-end mb-5">Somos jóvenes que facultamos a otros jóvenes en herramientas profesionales que
@@ -100,22 +101,20 @@
         <div class="redes">
             <a href="https://www.facebook.com/profile.php?id=100082997299240">Facebook<img class="fb"
                     src="../Imágenes/Facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/hodiesea/">Instagram<img class="ig" src="../Imágenes/Instagram.png"
-                    alt=""></a>
+            <a href="https://www.instagram.com/hodiesea/">Instagram<img class="ig"
+                    src="../Imágenes/Instagram.png" alt=""></a>
         </div>
-        
-     </div>   
-     <div>
-     <div class="datoscontactonuevo container-md mb-5">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Correo</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Asunto o curso de Interés</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>    
+        <div class="datoscontacto">
+            <form>
+                <label class="datosform" for="nombre">Nombre</label>
+                <input class="datosform nombre" type="text">
+                <label class="datosform" for="correo">Correo</label>
+                <input class="datosform correo" type="email">
+                <label class="datosform" for="asunto">Asunto o curso de interés</label>
+                <input class="datosform text" type="text">
+            </form>
         </div>
+    </div>
     <footer class="footer">
         <img class="finallogo" src="../Imágenes/icono-1.png" alt="">
         <p>Creado por @Hodiesea Capacitación y @Alejandro Segura, todos los derechos reservados</p>
@@ -126,5 +125,8 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 </body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>

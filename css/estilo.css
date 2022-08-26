@@ -224,7 +224,7 @@ h3{
 /*Contacto*/
 .contacto{
     grid-area: contacto;
-    height: 300px;
+    height: 500px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -284,9 +284,17 @@ h3{
 }
 .fb{
     height: 100px;
+    transition: all 0.5s;
+}
+.fb:hover{
+    transform: rotate(45deg);
 }
 .ig{
     height: 100px;
+    transition: all 0.5s;
+}
+.ig:hover{
+    transform: rotate(45deg);
 }
 @media (max-width: 767px) {
     .index{
@@ -305,7 +313,6 @@ h3{
     .videoTitulo{
         display: none;
     }
-    
 }
 
 
@@ -357,6 +364,8 @@ border-radius: 5px;
 }
 .calendarioC{
 grid-area: calendarioC;
+border-radius: 3px solid white;
+border-radius: 5px;
 }
 .calendarioD{
     grid-area: calendarioD;
@@ -530,6 +539,10 @@ header{
     margin: 5px;
     border-radius: 5px;
     padding: 20px;
+    transition: all 0.5s;
+}
+.gridejercicio:hover{
+    transform: scale(1.1,1.1);
 }
 h2{
     font-family: "Raleway";
@@ -580,4 +593,108 @@ h3{
             flex-wrap: wrap;
             flex-direction: column;
             align-items: center;}
+}
+
+
+/*PAGINA PROGRAMAS*/
+
+.paginaprogramas{
+    grid-area: paginaprogramas;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "nivelUno nivelUno nivelUno nivelUno"
+    "nivelDos nivelDos nivelDos nivelDos"
+    "contacto contacto contacto contacto"
+    "footer footer footer footer"
+    ;
+}
+.nivelUno{
+    grid-area: nivelUno;
+    padding-top: 40px;
+    height: 33rem;
+    transform: translate(0px,43px);
+    display: flex;
+    flex-flow: row wrap;
+    background-image: url(../Imágenes/nivel1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom:double white  10px;
+}
+.tituloInt1{
+    width: 100%;
+    font-family: "Quicksand";
+    height: 20%;
+}
+.tituloInt1 h2{
+    margin: 0;
+    font-size: 4rem;
+    transform: translate(2rem,0);
+}
+.intensivo1{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 15px;
+}
+.temarioUno{
+    background-color:   rgba(255, 255, 255, 0.71) ;
+    border: 3px solid white;
+    width: 20rem;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+.temarioUno h3{
+    color:rgb(59, 59, 59);  
+}
+.temarioUno li{
+    color:rgb(59, 59, 59); 
+    font-size: 12px;  
+}
+.nivelDos{
+    grid-area: nivelDos;
+    padding-top: 40px;
+    height: 33rem;
+    transform: translate(0px,43px);
+    display: flex;
+    flex-flow: column wrap;
+    background-image: url(../Imágenes/nivel2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.tituloInt1 h2{
+    margin: 0;
+    font-size: 4rem;
+    transform: translate(2rem,0);
+}
+.temarioDos{
+    background-color:   rgba(255, 255, 255, 0.71) ;
+    border: 3px solid white;
+    width: 20rem;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+.temarioDos h3{
+    color:rgb(59, 59, 59);  
+}
+.temarioDos li{
+    color:rgb(59, 59, 59); 
+    font-size: 12px;  
+}
+.nivelDos{
+    grid-area: nivelDos;
+    height: 34rem;
+    background-image: url(../Imágenes/nivel2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid white 3px;
 }

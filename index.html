@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hodiesea</title>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../Imágenes/icono-1.png" type="image/png" sizes="x-icon">
+    
     <link rel="stylesheet" href="../Hodiesea-Segura/css/estilo.css">
 </head>
 
@@ -17,10 +18,11 @@
         <div class="cajanav">
             <nav>
                 <ul>
-                    <li class="navegador"><a href="../Hodiesea-Segura/index.html">Inicio</a></li>
-                    <li class="navegador"><a href="../Hodiesea-Segura/Páginas/calendario.html">Calendario</a></li>
-                    <li class="navegador"><a href="../Hodiesea-Segura/Páginas/plataforma.html">Plataforma</a></li>
-                    <li class="navegador"><a href="../Hodiesea-Segura/Páginas/nosotros.html">Nosotros</a></li>
+                    <li class="navegador"><a href="../HDSEA-Segura/index.html">Inicio</a></li>
+                    <li class="navegador"><a href="../HDSEA-Segura/Páginas/calendario.html">Calendario</a></li>
+                    <li class="navegador"><a href="../HDSEA-Segura/Páginas/plataforma.html">Plataforma</a></li>
+                    <li class="navegador"><a href="../HDSEA-Segura/Páginas/nosotros.html">Nosotros</a></li>
+                    <li class="navegador"><a href="../HDSEA-Segura/Páginas/programas.html">Programas</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,9 +30,9 @@
 
     <main class="cajaPrincipal">
         <div class="cajatitulo">
-            <h1 class="titulo"> Hodiesea</h1>
-            <h2 class="slogan">Hacemos más sencillo el viaje profesional de los jóvenes </h2>
-            <h2 class="slogan">a través de la capacitación dinámica y original </h2>
+            <h1 class="titulo" data-aos="fade-right"> Hodiesea</h1>
+            <h2 class="slogan" data-aos="fade-right">Hacemos más sencillo el viaje profesional de los jóvenes </h2>
+            <h2 class="slogan" data-aos="fade-right">a través de la capacitación dinámica y original </h2>
         </div>
         <video class="videoTitulo" src="../Hodiesea-Segura/Videos/LaptopMujer.mp4" autoplay="true" muted="true"
             loop="true"></video>
@@ -41,8 +43,8 @@
         <img class="waves1" src="../Hodiesea-Segura/Imágenes/Waves1.png" alt="">
     </div>
 
-    <section class="programas">
-        <h3>Programas</h3>
+    <section class="programas" >
+        <h3 data-aos="flip-right">Programas</h3>
         <div class="cuadrosProgram">
             <div class="program">
                 <h4>Cursos Excel</h4>
@@ -64,16 +66,16 @@
     </section>
 
     <section class="calendario">
-        <h3>Calendario</h3>
+        <h3 data-aos="flip-right">Calendario</h3>
     </section>
 
-    <div class="amigos">
-        <h3>Amigos de Hodiesea</h3>
+    <div class="amigos" data-aos="fade-right">
+        <h3 data-aos="flip-right">Amigos de Hodiesea</h3>
         <img class="partners" src="../Hodiesea-Segura/Imágenes/Compañias Amigas.png" alt="">
     </div>
 
-    <div class=" testimonios">
-        <h3>Testimonios</h3>
+    <div class=" testimonios" data-aos="fade-left">
+        <h3 data-aos="flip-right">Testimonios</h3>
         <img class="partners" src="../Hodiesea-Segura/Imágenes/participantes.png" alt="">
     </div>
 
@@ -88,9 +90,9 @@
         </div>
         <div class="redes">
             <a href="https://www.facebook.com/profile.php?id=100082997299240">Facebook<img class="fb"
-                    src="../Hodiesea-Segura/Imágenes/Facebook.png" alt=""></a>
+                    src="../HDSEA-Segura/Imágenes/Facebook.png" alt=""></a>
             <a href="https://www.instagram.com/hodiesea/">Instagram<img class="ig"
-                    src="../Hodiesea-Segura/Imágenes/Instagram.png" alt=""></a>
+                    src="../HDSEA-Segura/Imágenes/Instagram.png" alt=""></a>
         </div>
         <div class="datoscontacto">
             <form>
@@ -109,7 +111,10 @@
         <p>Creado por @Hodiesea Capacitación y @Alejandro Segura, todos los derechos reservados</p>
         <p>Jóvenes mejorando jóvenes</p>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
